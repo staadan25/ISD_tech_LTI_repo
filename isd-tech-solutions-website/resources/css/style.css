@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Comic+Neue');
+@import url('https://fonts.googleapis.com/css?family=Caesar+Dressing');
+
 body {
     background-color: pink;
 }
 
 p {
     color: maroon;
+    font-family: 'Comic Neue';
 }
 h1 {
     color: green;
     text-align: center;
+    font-family: 'Caesar Dressing';
 }
