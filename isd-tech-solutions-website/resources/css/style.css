@@ -1,0 +1,90 @@
+
+@media screen and (max-width:739px){
+    .header {
+        grid-template-columns: 6fr 1fr!important;
+    }
+    .header h1 {
+        font-size: clamp(15px, 20vw, 35px);
+        text-align: center;
+        padding-right: 50px;
+    }
+    .header a{
+        display:none;
+    }
+    .header img{
+        display: grid;
+    }
+}
+@media screen and (min-width:740px) and (max-width:839px){
+    .header h1 {
+        font-size: 35px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .header a {
+        font-size: 25px;
+        padding-left: 1%;
+        padding-right: 1%;
+        display: grid;
+    }
+    .header img{
+        display: none;
+    }
+}
+@media screen and (min-width:840px) and (max-width:1199px){
+    .header h1 {
+        font-size: 40px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .header a {
+        font-size: 25px;
+        padding-left: 3%;
+        padding-right:3%;
+        display:grid;
+    }
+    .header img{
+        display: none;
+    }
+}
+@media screen and (min-width:1200px){
+    .header h1 {
+        font-size: 50px;
+        padding-left: 15%;
+        padding-right:15%;
+    }
+    .header a {
+        font-size: 30px;
+        padding-left: 3%;
+        padding-right:3%;
+        display:grid;
+    }
+    .header img{
+        display: none;
+    }
+}
+.header {
+    background-color: #000000;
+    width: 100%;
+  
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr;
+}
+
+.header a {
+    color:#FFFFFF;
+    line-height: 10px;
+    text-decoration: none;
+    font-family:Roboto;
+    padding-left: 3%;
+    padding-right:3%;
+    line-height: 80px;
+
+}
+  
+
+.header h1 {
+    color:#FFFFFF;
+    line-height: 15px;
+    font-family:Roboto;
+}
