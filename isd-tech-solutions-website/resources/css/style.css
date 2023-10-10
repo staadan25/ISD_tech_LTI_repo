@@ -13,7 +13,7 @@ html {
     box-sizing: inherit;
 }
 @media only screen and (max-width:899px){
-    #sidebar {
+    #sidebar-icon {
        display:flex;
     }
     .header {
@@ -32,9 +32,15 @@ html {
         text-align: center;
         padding-top: 5%;
     }
+    .sidebar{
+        display: flex;
+    }
+    #transparent-overlay{
+        display:block;
+    }
 }
 @media only screen and (min-width:900px){
-    #sidebar {
+    #sidebar-icon {
        display:none;
     }
     .header a {
@@ -53,6 +59,12 @@ html {
         right: 10%;
         padding-top: 10%;
         text-align: center;
+    }
+    .sidebar {
+        display: none;
+    }
+    #transparent-overlay{
+        display:none;
     }
 }
 @media only screen and (max-width:374px){
@@ -94,7 +106,7 @@ html {
     color:#FFFFFF;
     font-family:Roboto;
 }
-#sidebar {
+#sidebar-icon {
     flex-grow:1;
     max-width: 10%;
     max-height: 10%;
@@ -108,4 +120,49 @@ h3 {
     font-family: Roboto;
     color:#80819a;
 }
+#sidebar-div{
+    flex-direction: column;
+    flex-wrap: wrap;
+    top:0px;
+    right:0px;
+    width:70%;
+    height:100%;
+    background-color:#80819a;
+    z-index:2;
+    position:fixed;
+    align-items:end;
 
+}
+#top-sidebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.sidebar h1 {
+    font-size: 9vw;
+    padding:20px 20px 20px 5px;
+    color:#FFFFFF;
+    font-family:Roboto;
+}
+.sidebar a {
+    font-size: 6vw;
+    padding:30px 20px 5px 5px;
+    text-decoration: none;
+    color:#FFFFFF;
+    font-family:Roboto;
+}
+#bar {
+    height:5px;
+    width:100%;
+    background-color: #a3a3a3;
+}
+#transparent-overlay{
+    width:100%;
+    height:100%;
+    opacity: 60%;
+    z-index: 1;
+    top:0px;
+    left:0px;
+    position: absolute;
+    background-color: #000000;
+}
