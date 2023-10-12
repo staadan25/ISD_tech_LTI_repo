@@ -1,0 +1,38 @@
+.contactus-content{
+    margin-top: 10%;
+}
+.contactus-content h1{
+    font-size: 20px;
+    color: #80819a;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Roboto;
+}
+.contactus-content h2{
+    margin-top: 5%;
+    font-size: 20px;
+    color: #80819a;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Roboto;
+}
+.accordion {
+    background-color: black;
+    color: #80819a;
+    cursor: pointer;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+.panel{
+    display: none;
+    overflow: hidden;
+}
+.dropdowns{
+    text-align: center;
+}
