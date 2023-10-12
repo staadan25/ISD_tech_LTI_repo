@@ -1,18 +1,18 @@
-body {
+body { /*Gradient background, background-atachment means it will not scroll. Feel free to change that.*/
     background:linear-gradient(#000000,#343037);
     background-attachment: fixed;
 }
-* {
+* { /*Removes the default margin/padding*/ 
     margin: 0;
     padding: 0;
 }
-html {
+html { /*These two makes the sizing calculated right so things don't create a horizontal scroll bar*/
     box-sizing: border-box;
 }
 *, *:before, *:after {
     box-sizing: inherit;
 }
-@media only screen and (max-width:899px){
+@media only screen and (max-width:899px){ /*Mobile version*/
     #sidebar-icon {
        display:flex;
     }
@@ -26,20 +26,14 @@ html {
         font-size:6vw;
         flex-grow: 1;
     }
-    #title-area {
+    #title-area { 
         padding-left: 20px;
         padding-right: 20px;
         text-align: center;
         padding-top: 5%;
     }
-    .sidebar{
-        display: flex;
-    }
-    #transparent-overlay{
-        display:block;
-    }
 }
-@media only screen and (min-width:900px){
+@media only screen and (min-width:900px){ /*Desktop version*/
     #sidebar-icon {
        display:none;
     }
@@ -66,8 +60,11 @@ html {
     #transparent-overlay{
         display:none;
     }
+    #x-button{
+        display: none;
+    }
 }
-@media only screen and (max-width:374px){
+@media only screen and (max-width:374px){ /*Makes text smaller on really small phones*/
     h2 {
         font-size: 60px;
     }
@@ -87,17 +84,17 @@ html {
     background-color: #000000;
     width: 100%;
     justify-content: center;
-    display: flex;
+    display: flex; /*Creates a flexbox to hold everything in the header*/ 
     flex-direction: row;
     align-items: center;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 2vh;
+    padding-top: 2vh; /*1 vh is 1% of width*/
     padding-bottom: 2vh;
 }
 .header a {
     color:#FFFFFF;
-    text-decoration: none;
+    text-decoration: none; /*This removes the default link underline*/
     font-family:Roboto;
     flex-grow: 1;
     padding-right:3vw;
@@ -120,7 +117,7 @@ h3 {
     font-family: Roboto;
     color:#80819a;
 }
-#sidebar-div{
+#sidebar-div{ /*A flexbox that appears on mobile to contain what woul've been in the header*/
     flex-direction: column;
     flex-wrap: wrap;
     top:0px;
@@ -128,35 +125,30 @@ h3 {
     width:70%;
     height:100%;
     background-color:#80819a;
-    z-index:2;
+    z-index:1; /*Z index determines what elements are in front of each other*/
     position:fixed;
     align-items:end;
-
+    /*Will add an animation later*/
 }
-#top-sidebar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.sidebar h1 {
+.sidebar h1 { /*Sidebar title*/
     font-size: 9vw;
     padding:20px 20px 20px 5px;
     color:#FFFFFF;
     font-family:Roboto;
 }
-.sidebar a {
+.sidebar a { 
     font-size: 6vw;
     padding:30px 20px 5px 5px;
     text-decoration: none;
     color:#FFFFFF;
     font-family:Roboto;
 }
-#bar {
+#bar { /*Visual divide bar*/
     height:5px;
     width:100%;
     background-color: #a3a3a3;
 }
-#transparent-overlay{
+#transparent-overlay{ /*A giant, transparent box that helps seperate the sidebar from the background*/
     width:100%;
     height:100%;
     opacity: 60%;
@@ -165,4 +157,13 @@ h3 {
     left:0px;
     position: absolute;
     background-color: #000000;
+}
+#x-button{ /*Sidebar close*/
+    position: absolute;
+    top:20px;
+    left:12%;
+    z-index:2;
+    color:#FFFFFF;
+    font-family: Roboto;
+    font-size:10vw;
 }
