@@ -18,22 +18,38 @@
     margin-right: 10%;
     font-family: Roboto;
 }
-.accordion {
+.motherbutton {
     background-color: black;
     color: #80819a;
     cursor: pointer;
     padding: 20px;
     width: 50%;
-    text-align: center;
     border: none;
-    outline: none;
-    transition: 0.4s;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 2.5vw;
   }
 .panel{
-    display: none;
+    display: block;
     overflow: hidden;
+    text-align: center;
 }
 .dropdowns{
     text-align: center;
-    display: none;
+}
+.childbutton{
+    background-color: black;
+    color: #d8d9ec;
+    cursor: pointer;
+    padding: 20px;
+    width: 50%;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    text-shadow: -1px 0 black, 1px 0 black, 0 -1px black, 0 1px black;
+    font-size: 2.5vw;
+
 }
