@@ -4,10 +4,13 @@
 .contactus-content h1{
     font-size: 20px;
     color: #80819a;
-    text-align: left;
+    text-align: center;
     margin-left: 10%;
     margin-right: 10%;
     font-family: Roboto;
+}
+.contactus-content a{
+    color: #383a7c;
 }
 .contactus-content h2{
     margin-top: 5%;
@@ -36,6 +39,7 @@
 }
 .dropdowns{
     text-align: center;
+    margin-top: 5%;
 }
 .childbutton{
     background-color: black;
@@ -51,5 +55,11 @@
     justify-content: center;
     text-shadow: -1px 0 black, 1px 0 black, 0 -1px black, 0 1px black;
     font-size: 2.5vw;
-
+}
+.title{
+    font-size: 20px;
+    color: #80819a;
+    text-align: center;
+    font-family: Roboto;
+    margin-top: 10%
 }
