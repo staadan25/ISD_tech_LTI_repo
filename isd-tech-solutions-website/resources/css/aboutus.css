@@ -33,6 +33,12 @@
         padding-bottom: 2%;
         font-size: 17vw;
     }
+    .container img {
+        width: 50vw;
+    }
+    .container {
+        grid-template-columns: 1fr;
+    } 
 }
 @media only screen and (min-width:900px){
     .main h2 {
@@ -41,4 +47,30 @@
     .main img {
         width: 40%;
     }
+    .container img {
+        width: 20vw;
+    }
+    .container {
+        grid-template-columns: 1fr 1fr;
+    } 
+}
+
+.container {
+    text-align: center;
+    display: grid;
+    padding: 0%;
+    color:#ffffff;
+    font-family: Roboto;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 5vh;
+    column-gap: 10vw;
+}
+
+.container h1 {
+    padding: 3vh;
+}
+
+.container p {
+    padding-top: 2vh;
 }
