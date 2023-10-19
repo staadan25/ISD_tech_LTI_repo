@@ -14,7 +14,14 @@
         font-size: 40px;
     }
 }
+#title-area{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5vw;
+}
 h2 {
+    padding-top:50px;   
     font-family: Roboto;
     color:#80819a;
 }
