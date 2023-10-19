@@ -10,3 +10,9 @@ function openaccordion(){
             newbutton.style.backgroundColor="rgb("+String(Math.random() *255)+","+String(Math.random() *255)+","+String(Math.random() *255)+")"
         }
     }
+function showbutton(){
+    var DropdownsClass = document.getElementsByClassName("dropdowns");
+    for (var i=0; i < DropdownsClass.length; i++){
+        DropdownsClass[i].style.display="block";
+    }
+}

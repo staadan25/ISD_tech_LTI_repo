@@ -5,8 +5,6 @@
     font-size: 20px;
     color: #80819a;
     text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
     font-family: Roboto;
 }
 .contactus-content a{
@@ -40,6 +38,8 @@
 .dropdowns{
     text-align: center;
     margin-top: 5%;
+    display: none;
+    text-align: center;
 }
 .childbutton{
     background-color: black;
