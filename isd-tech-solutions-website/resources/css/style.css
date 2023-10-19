@@ -105,6 +105,7 @@ html { /*These two makes the sizing calculated right so things don't create a ho
     font-family: Roboto;
     font-size:10vw;
     display: none;
+    cursor:default;
 }
 
 @media only screen and (min-width:900px){ /*Desktop version, overrides the mobile site- see "mobile first" design*/
