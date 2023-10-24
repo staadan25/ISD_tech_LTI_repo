@@ -16,5 +16,12 @@ jobs:
           user-email: staadan25@gibsonek.org
           target-branch: main
           commit-message: "updating testing repo"
+  second-job:
+    name: another_job
+    runs-on: ubuntu-latest
+    steps:
+      - name: my first step
+        run: echo hello
           
 
+  
