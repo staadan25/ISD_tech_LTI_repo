@@ -107,6 +107,15 @@ html { /*These two makes the sizing calculated right so things don't create a ho
     display: none;
     cursor:default;
 }
+iframe{
+    display: flex;
+    text-align: center;
+    height: 500px;
+    justify-content: center;
+    margin: auto;
+    border: none;
+    padding: 10px
+}
 
 @media only screen and (min-width:900px){ /*Desktop version, overrides the mobile site- see "mobile first" design*/
     .header {
@@ -132,8 +141,7 @@ html { /*These two makes the sizing calculated right so things don't create a ho
         display: none;
     }
     #title-area {
-        position:absolute;
-        right: 10%;
         padding-top: 10%;
+        margin-left: 30%
     }
 }
