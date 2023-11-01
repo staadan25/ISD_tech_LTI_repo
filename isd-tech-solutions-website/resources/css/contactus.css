@@ -20,14 +20,14 @@
     font-family: Roboto;
 }
 .motherbutton {
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
     background-color: black;
     color: #80819a;
     cursor: pointer;
-    padding: 20px;
-    width: 50%;
     border: none;
-    text-align: center;
-    border-radius: 10px;
     font-size: 2.5vw;
   }
 .panel{
@@ -42,24 +42,24 @@
     text-align: center;
 }
 .childbutton{
+    display: flex;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
     background-color: black;
     color: #d8d9ec;
     cursor: pointer;
-    padding: 20px;
-    width: 50%;
     border: none;
-    text-align: center;
-    border-radius: 10px;
-    display: flex;
     margin: auto;
     justify-content: center;
     text-shadow: -1px 0 black, 1px 0 black, 0 -1px black, 0 1px black;
     font-size: 2.5vw;
 }
 .title{
+    text-align: center;
+    margin-top: 10%;
     font-size: 20px;
     color: #80819a;
-    text-align: center;
     font-family: Roboto;
-    margin-top: 10%
 }
