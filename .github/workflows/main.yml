@@ -17,14 +17,14 @@ jobs:
       - name: creates output
         run:  sh ./.github/workflows/build.sh # some command from your repository that creates
                             # output to "source-directory" ("output" in the example)
+        env:
+            API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       - name: Pushes to another repository
         uses: cpina/github-action-push-to-another-repository@main
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source-directory: '.'
-          destination-github-username: 'staadan25'
-          destination-repository-name: 'staadan25.github.io'
-          user-email: staadan25@gibsonek.org
-          target-branch: main
-
+            source-directory: '.'
+            destination-github-username: 'staadan25'
+            destination-repository-name: 'staadan25.github.io'
+            user-email: staadan25@gibsonek.org
+            target-branch: main
+        
