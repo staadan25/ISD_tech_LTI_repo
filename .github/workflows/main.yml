@@ -2,9 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches: [ release ]
 
 jobs:
   build:
@@ -14,11 +12,6 @@ jobs:
                                # used in the specific "build.sh"
     steps:
       - uses: actions/checkout@v2
-      - name: creates output
-        run:  sh ./.github/workflows/build.sh # some command from your repository that creates
-                            # output to "source-directory" ("output" in the example)
-        env:
-            API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       - name: Pushes to another repository
         uses: cpina/github-action-push-to-another-repository@main
         with:
@@ -27,4 +20,7 @@ jobs:
             destination-repository-name: 'staadan25.github.io'
             user-email: staadan25@gibsonek.org
             target-branch: main
+        env:
+            API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+  
         
