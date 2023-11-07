@@ -15,7 +15,7 @@ jobs:
       - name: Pushes to another repository
         uses: cpina/github-action-push-to-another-repository@main
         with:
-            source-directory: '.'
+            source-directory: 'isd-tech-solutions-website'
             destination-github-username: 'staadan25'
             destination-repository-name: 'staadan25.github.io'
             user-email: staadan25@gibsonek.org
