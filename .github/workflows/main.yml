@@ -15,7 +15,7 @@ jobs:
       - name: Pushes to another repository
         uses: cpina/github-action-push-to-another-repository@main
         with:
-            source-directory: '.'
+            source-directory: 'isd-tech-solutions-website'
             destination-github-username: 'foxintheclouds'
             destination-repository-name: 'foxintheclouds.github.io'
             user-email: kyanschmidt1@gmail.com
